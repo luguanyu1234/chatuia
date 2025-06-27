@@ -1,0 +1,55 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit",
+    "source.removeUnusedImports": "explicit",
+    "eslint.autoFixOnSave": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // 指定哪些语言文件使用 Prettier 格式化
+  "prettier.documentSelectors": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.mjs",
+    "**/*.cjs",
+    "**/*.json",
+    "**/*.css",
+    "**/*.scss",
+    "**/*.less",
+    "**/*.html",
+    "**/*.md",
+    "**/*.yaml"
+  ],
+  // 禁用其他格式化工具，避免冲突
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // 确保 ESLint 能够处理所有相关文件类型
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "json",
+    "jsonc",
+    "json5",
+    "graphql",
+    "html",
+    "css",
+    "scss",
+    "yaml",
+    "markdown"
+  ]
+}
